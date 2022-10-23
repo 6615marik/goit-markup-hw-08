@@ -1,0 +1,56 @@
+.working {
+    padding-bottom: 60px;
+        @media screen and (max-width: 1199px) {
+                display: none;
+    }
+        @media screen and (min-width: $desktop) {
+            padding-bottom: 90px;
+        }
+}
+.working__list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+        
+
+.working__iteam {
+    width: 370px;
+    margin-right: 30px;
+    position: relative;
+}
+
+.working__iteam:last-child {
+    margin-right: 0;
+}
+
+.header__two {
+    color: $text-dark;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.working__application {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.working__application-titles {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-white;
+    padding: 27px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}

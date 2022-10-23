@@ -1,0 +1,136 @@
+.team {
+    background: #F5F4FA;
+    padding: 60px 0;
+        
+                @media screen and (min-width: $desktop) {
+                    padding: 94px 0;
+                }
+}
+
+.team__list {
+    color: $text-dark;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-wrap: nowrap;
+    }
+
+}
+
+.team__iteam {
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+    background-color: $text-white;
+
+
+    &:last-child {
+    margin-right: 0;}
+
+
+        @media screen and (min-width: $tablet) {
+            width: calc((100% - 30px) / 2);
+        }
+    
+                    
+}
+
+
+.team__img{
+display: inline-block;   
+width: 450px;
+height: 460px;
+
+
+@media screen and (min-width: $tablet) {
+width: 354px;
+height: 374px;
+}
+@media screen and (min-width: $desktop) {
+width: 270px;
+height: 260px;
+}
+}
+
+
+
+
+.team__name-worker {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: $text-dark;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.team__job {
+    color: $main-text;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    margin: top 10px;
+    margin-bottom: 16px;
+}
+
+
+.team__icon-list {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon-list__iteam {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.icon-list__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: transparent;
+    fill: #AFB1B8;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
+
+
+        &:hover,
+        &:focus {
+        background-color: $text-accent;}
+
+                &:hover .icon-list__icon,
+                &:focus .icon-list__icon {
+                fill: $text-white;}
+}
+
+.icon-list__icon {
+    transition-property: fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+

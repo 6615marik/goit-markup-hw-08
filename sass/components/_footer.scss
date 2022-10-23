@@ -1,0 +1,266 @@
+.footer{
+    background: $color-footer;
+    padding: 60px 0;
+    text-align: left;
+}
+.adress__contact-footer{
+  margin-top: 20px;
+}
+.address__tel-emal{
+  font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+  transition-property:color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+    &:hover,
+    &:focus {
+    color: $text-accent}
+}
+
+.address__office{
+color: $text-white;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+transition-property:color;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 250ms;
+
+    &:hover,
+    &:focus {
+    color: $text-accent}
+}
+
+.adress__list {
+margin-bottom: 9px;
+width: 231px;
+height: 21px;
+
+
+    &:last-child {
+    margin-bottom: 0;}
+}
+
+.footer-flex{
+display: flex;
+flex-direction: column;
+
+gap: 60px;
+justify-content: flex-start;
+align-items: center;
+width: 480px;
+height: 490px;
+
+@media screen and (min-width: $tablet) {
+flex-direction: row;
+align-items: flex-start;
+flex-wrap: wrap;
+gap: 0;
+margin-top: 0px;
+width: 768px;
+height: 343px;
+}
+
+  @media screen and (min-width: $desktop) {
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: baseline;
+width: 1200px;
+height: 100%;
+
+}
+
+
+.contact__footer{
+
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ align-items:  center;
+
+@media screen and (min-width: $tablet) {
+padding-left: 76px;
+}
+
+@media screen and (min-width: $desktop) {
+  text-align: start;
+  align-items: flex-start;
+  padding-left: 0;}  
+}}
+
+
+
+
+
+
+.join__footer{
+width: 206px;
+height: 80px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+ 
+
+
+  @media screen and (min-width: $tablet) {
+  margin-top: 5px;
+  margin-left: 165px;
+  }
+  
+    @media screen and (min-width: $desktop) {
+      margin-left: 70px;
+      align-items: flex-start;
+      padding-top: 12px; 
+      }
+  
+  }  
+.join__word{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: $text-white;
+
+}
+
+.join__list{
+  width: 206px;
+  height: 44px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+}
+.join__iteam{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.join__link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color:$text-white;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  
+      &:hover,
+      &:focus {
+      background-color: $text-accent;
+      }     
+              &:hover .icon__join,
+              &:focus .icon__join {
+              background-color: $text-accent;}
+}
+
+.icon__join {
+  fill: currentColor;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  }
+
+
+.e-mail__footer{
+width: 570px;
+
+display: flex;
+flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+
+
+@media screen and (min-width: $tablet) {
+  margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+  @media screen and (min-width: $desktop) {
+    gap: 0px;
+    align-items: flex-start;
+    margin-left: 93px;
+    margin-top: 0;
+    
+  }
+}
+
+
+.e-mail__box{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  @media screen and (min-width: $tablet) {}
+    
+    @media screen and (min-width: $desktop) {
+      display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        gap: 12px;
+        flex-direction: row;
+          
+      }
+
+        
+}
+.e-mail__box input{
+padding: 15px 16px;
+width: 358px;
+background-color: transparent;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button__footer{
+width: 200px;
+background:$text-accent;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+cursor: pointer;
+
+font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  
+  color: $text-white;
+
+  border: 0;
+  padding: 10px;
+  gap: 10px;
+}
+
+.e-mail__icon-join{
+  fill: $text-white;
+}

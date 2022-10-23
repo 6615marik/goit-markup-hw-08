@@ -1,0 +1,17 @@
+.logo {
+  text-decoration: none;
+  color: $text-black;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+    
+  &__white{
+  color: $text-white;
+}
+
+}
+
+.logo__accent {
+  color: $text-accent;
+}
