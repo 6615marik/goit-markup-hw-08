@@ -350,6 +350,8 @@ a {
 }
 .button__menu.is-open {
   position: fixed;
+  left: 380px;
+  top: 10px;
 }
 .button__menu.is-open .icon-cross {
   display: block;
@@ -384,7 +386,6 @@ a {
     background-color: #FFFFFF;
     flex-direction: column;
     justify-content: space-between;
-    overflow: scroll;
     height: 100%;
   }
   .menu-container.is-open {
@@ -613,6 +614,7 @@ a {
   text-align: center;
   align-items: center;
   gap: 20px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .e-mail__footer {
@@ -636,7 +638,12 @@ a {
   text-align: center;
   align-items: center;
   gap: 20px;
-  width: 450px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .e-mail__box {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .e-mail__box {

@@ -8,7 +8,6 @@
     justify-content: space-between;
     height: 60px;
     
-
     
     @media screen and (min-width: $tablet) {
         width: $tablet;
@@ -186,6 +185,7 @@ display: none;
     border: 0;
     position: static;
 
+
     &:hover,
     &:focus{
         fill: $text-accent;
@@ -195,13 +195,14 @@ display: none;
     }
         &.is-open{
             position: fixed;
-            
-            .icon-cross{
-                
-                        &:hover,
-                        &:focus {
-                            fill: $text-accent;
-                        }
+            left: 380px;
+            top: 10px;
+                .icon-cross{
+                    
+                            &:hover,
+                            &:focus {
+                                fill: $text-accent;
+                            }
             display: block;   
         }
         }
@@ -236,7 +237,7 @@ display: none;
             background-color:$text-white;
             flex-direction: column;
             justify-content: space-between;
-            overflow: scroll;
+    
             height: 100%;
                 &.is-open {
                     display: flex;}
