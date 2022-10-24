@@ -350,7 +350,7 @@ a {
 }
 .button__menu.is-open {
   position: fixed;
-  left: 380px;
+  right: 15px;
   top: 10px;
 }
 .button__menu.is-open .icon-cross {
@@ -500,6 +500,7 @@ a {
   .footer-flex {
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 0;
     margin-top: 0px;
@@ -522,11 +523,6 @@ a {
   text-align: center;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
-  .footer-flex .contact__footer {
-    padding-left: 76px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-flex .contact__footer {
     text-align: start;
@@ -546,7 +542,7 @@ a {
 @media screen and (min-width: 768px) {
   .join__footer {
     margin-top: 5px;
-    margin-left: 165px;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
