@@ -24,7 +24,7 @@
 
 .header__nav-site{
     @media screen and (max-width: 767px) {
-    margin-bottom: 306px;  
+    margin-bottom: 100px;  
     }
         
 
@@ -182,7 +182,7 @@ display: none;
     display: inline-block;
     margin: 0;
     padding: 0;
-    z-index: 10;
+    z-index: 9;
     background-color: transparent;
     border: 0;
 
@@ -219,7 +219,7 @@ display: none;
 
         @media screen and (max-width: 767px){
                     display: none;
-            position: absolute;
+            position: fixed;
             left: 0;
             top: 0;
             width: 100%;
@@ -227,10 +227,14 @@ display: none;
             padding-top: 48px;
             padding-bottom: 48px;
             gap: 32px;
-            z-index: 9;
+            z-index: 8;
             background-color:$text-white;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: scroll;
+            height: 100%;
                 &.is-open {
-                    display: block;}
+                    display: flex;}
         }
                         @media screen and (min-width: $tablet) {
                             margin-left: 87px;

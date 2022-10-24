@@ -32,28 +32,30 @@
                         <li class="nav-site__item" ><a href="" class="nav-site__link nav-site__link--after">Контакти</a></li>
                     </ul>
                 </nav>
-                <ul class="header__contacts">
-                    <li class="contacts__item">
-                        <a href="mailto:info@devstudio.com" class="contacts__tel contacts__after" href="">
-                            <svg class="contacts__icon"  width="16" height="12">
-                                    <use href="./images/icons.svg.svg#icon-email"></use>
-                            </svg>info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="contacts__item">
-                        <a href="tel:+380961111111" class="contacts__tel tel-footer contacts__after" href="">
-                            <svg class="contacts__icon"  width="10" height="12">
-                                    <use href="./images/icons.svg.svg#icon-tel"></use>
-                            </svg> +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
-                <ul class="header__link">
-                    <li><a class="header__item-link" href="">Instagram</a></li>
-                    <li><a  class="header__item-link"href="">Twitter</a></li>
-                    <li><a class="header__item-link" href="">Facebook</a></li>
-                    <li><a  class="header__item-link"href="">LinkedIn</a></li>
-                </ul>
+                <div class="header__lists">
+                    <ul class="header__contacts">
+                        <li class="contacts__item">
+                            <a href="mailto:info@devstudio.com" class="contacts__tel contacts__after" href="">
+                                <svg class="contacts__icon"  width="16" height="12">
+                                        <use href="./images/icons.svg.svg#icon-email"></use>
+                                </svg>info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a href="tel:+380961111111" class="contacts__tel tel-footer contacts__after" href="">
+                                <svg class="contacts__icon"  width="10" height="12">
+                                        <use href="./images/icons.svg.svg#icon-tel"></use>
+                                </svg> +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__link">
+                        <li><a class="header__item-link" href="">Instagram</a></li>
+                        <li><a  class="header__item-link"href="">Twitter</a></li>
+                        <li><a class="header__item-link" href="">Facebook</a></li>
+                        <li><a  class="header__item-link"href="">LinkedIn</a></li>
+                    </ul>
+                </div>
             </div>   
         </div>
     </header>
@@ -173,27 +175,27 @@
                 <ul class="working__list">
                     <li class="working__iteam">
                         <img class="working__img" srcset="
-                        ./images/boxmo.jpg 1x,
-                        ./images/boxmt.jpg 2x"
-                        src="images/boxmo.jpg" alt="box" width="370px">
+                        ./images/boxdo.jpg 1x,
+                        ./images/boxdt.jpg 2x"
+                        src="images/boxdo.jpg" alt="box" width="370px">
                         <div class="working__application">
                             <p class="working__application-titles">Десктопні додатки</p>
                         </div>
                     </li>
                     <li class="working__iteam">
                         <img class="working__img" srcset="
-                        ./images/box2mo.jpg 1x,
-                        ./images/box2mt.jpg 2x"
-                        src="images/box2mo.jpg" alt="box2" width="370px">
+                        ./images/box2do.jpg 1x,
+                        ./images/box2dt.jpg 2x"
+                        src="images/box2do.jpg" alt="box2" width="370px">
                         <div class="working__application">
                             <p class="working__application-titles">Мобільні додатки</p>
                         </div>
                     </li>
                     <li class="working__iteam">
                         <img class="working__img" srcset="
-                        ./images/box3mo.jpg 1x,
-                        ./images/box3mt.jpg 2x"
-                        src="images/box3mo.jpg" alt="box3" width="370px">
+                        ./images/box3do.jpg 1x,
+                        ./images/box3dt.jpg 2x"
+                        src="images/box3do.jpg" alt="box3" width="370px">
                         <div class="working__application">
                             <p  class="working__application-titles">Дизайнерські рішення</p>
                         </div>
@@ -208,11 +210,27 @@
                 <h2 class="header__two">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__iteam">
-                        <img class="team__img" 
-                        srcset="
-                        ./images/ihormo.jpg 320w,
-                        ./images/ihormt.jpg 640w"
-                        src="images/ihormo.jpg" alt="ihor" sizes="(min-width: $desktop) 25vw, (min-width: $tablet) 50vw, 100vw">
+                        <picture>
+                            <source 
+                                srcset="
+                                            ./images/ihordo.jpg 1x ,
+                                            ./images/ihordt.jpg 2x 
+                                            "
+                                media="(min-width: 1200px)" >
+                                <source srcset="
+                                            ./images/ihorto.jpg 1x ,
+                                            ./images/ihortt.jpg 2x 
+                                            " 
+                                media="(min-width: 768px)" >
+                                <source srcset="
+                                                ./images/ihormo.jpg 1x ,
+                                                ./images/ihormt.jpg 2x 
+                                                " 
+                                media="(min-width: 320px)" >
+                        
+                        <img class="team__img" src="images/ihordo.jpg" alt="ihor">
+                        </picture>
+                        
                         <h3  class="team__name-worker">Ігор Дем'яненко</h3>
                         <p  class="team__job">Product Designer</p>
                         <ul class="team__icon-list">
@@ -231,10 +249,22 @@
                         </ul>
                     </li>
                     <li class="team__iteam">
-                        <img class="team__img" srcset="
-                                                ./images/olgamo.jpg 320w,
-                                                ./images/olgamt.jpg 640w" src="images/olgamo.jpg" alt="olga"
-                            sizes="(min-width: $desktop) 25vw, (min-width: $tablet) 50vw, 100vw">
+                        <picture>
+                            <source srcset="
+                                            ./images/olgado.jpg 1x ,
+                                            ./images/olgadt.jpg 2x 
+                                            " media="(min-width: 1200px)">
+                            <source srcset="
+                                            ./images/olgato.jpg 1x ,
+                                            ./images/olgatt.jpg 2x 
+                                            " media="(min-width: 768px)">
+                            <source srcset="
+                                            ./images/olgamo.jpg 1x ,
+                                            ./images/olgamt.jpg 2x 
+                                            " media="(min-width: 320px)">
+                        
+                            <img class="team__img" src="images/olgado.jpg" alt="olga">
+                        </picture>
                         <h3 class="team__name-worker">Ольга Рєпіна</h3>
                         <p class="team__job">Frontend Developer</p>
                         <ul class="team__icon-list">
@@ -253,10 +283,22 @@
                         </ul>
                     </li>
                     <li class="team__iteam">
-                        <img class="team__img"  srcset="
-                                                ./images/mycolamo.jpg 320w,
-                                                ./images/mycolamt.jpg 640w" src="images/mycolamo.jpg" alt="mykola"
-                            sizes="(min-width: $desktop) 25vw, (min-width: $tablet) 50vw, 100vw">
+                        <picture>
+                            <source srcset="
+                                            ./images/mycolado.jpg 1x ,
+                                            ./images/mycoladt.jpg 2x 
+                                            " media="(min-width: 1200px)">
+                            <source srcset="
+                                            ./images/mycolato.jpg 1x ,
+                                            ./images/mycolatt.jpg 2x 
+                                            " media="(min-width: 768px)">
+                            <source srcset="
+                                            ./images/mycolamo.jpg 1x ,
+                                            ./images/mycolamt.jpg 2x 
+                                            " media="(min-width: 320px)">
+                        
+                            <img class="team__img" src="images/mycolado.jpg" alt="mycola">
+                        </picture>
                         <h3 class="team__name-worker">Микола Тарасов</h3>
                         <p class="team__job">Marketing</p>
                         <ul class="team__icon-list">
@@ -275,10 +317,22 @@
                         </ul>
                     </li>
                     <li class="team__iteam">
-                        <img class="team__img" srcset="
-                                                ./images/myhalomo.jpg 320w,
-                                                ./images/myhalomt.jpg 640w" src="images/myhaloamo.jpg" alt="mykola"
-                            sizes="(min-width: $desktop) 25vw, (min-width: $tablet) 50vw, 100vw">
+                        <picture>
+                            <source srcset="
+                                            ./images/myhalodo.jpg 1x ,
+                                            ./images/myhalodt.jpg 2x 
+                                            " media="(min-width: 1200px)">
+                            <source srcset="
+                                            ./images/myhaloto.jpg 1x ,
+                                            ./images/myhalott.jpg 2x 
+                                            " media="(min-width: 768px)">
+                            <source srcset="
+                                            ./images/myhalomo.jpg 1x ,
+                                            ./images/myhalomt.jpg 2x 
+                                            " media="(min-width: 320px)">
+                        
+                            <img class="team__img" src="images/myhalodo.jpg" alt="myhalo">
+                        </picture>
                         <h3 class="team__name-worker">Михайло Єрмаков</h3>
                         <p class="team__job">UI Designer</p>
                         <ul class="team__icon-list">
