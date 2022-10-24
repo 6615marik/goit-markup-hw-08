@@ -176,7 +176,6 @@ color: $text-white;
 
 
 .e-mail__footer{
-width: 570px;
 
 display: flex;
 flex-direction: column;
@@ -207,7 +206,10 @@ flex-direction: column;
   text-align: center;
   align-items: center;
   gap: 20px;
-  @media screen and (min-width: $tablet) {}
+width: 450px;
+  @media screen and (min-width: $tablet) {
+    
+  }
     
     @media screen and (min-width: $desktop) {
       display: flex;
@@ -215,14 +217,14 @@ flex-direction: column;
         justify-content: space-between;
         gap: 12px;
         flex-direction: row;
-          
+          width: 570px;
       }
 
         
 }
 .e-mail__box input{
 padding: 15px 16px;
-width: 358px;
+
 background-color: transparent;
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -235,6 +237,10 @@ border-radius: 4px;
   display: flex;
   align-items: center;
   color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  @media screen and (min-width: $desktop) {
+  width: 358px;
+  }
 }
 
 .button__footer{

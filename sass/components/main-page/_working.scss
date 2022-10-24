@@ -16,14 +16,18 @@
 
 .working__iteam {
     width: 370px;
+    height: 294px;
     margin-right: 30px;
-    position: relative;
+     position: relative;
 }
 
 .working__iteam:last-child {
     margin-right: 0;
 }
 
+.working__img {
+ height: 100%;
+}
 
 .working__application {
     position: absolute;

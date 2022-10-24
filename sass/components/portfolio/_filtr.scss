@@ -5,9 +5,11 @@
 .filtr {
     margin-bottom: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    
 
     flex-direction: row;
+    row-gap: 15px;
     flex-wrap: wrap;
     width: 326px;
     height: 91px;
