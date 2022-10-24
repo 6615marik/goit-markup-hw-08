@@ -6,7 +6,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:$mobile;
     height: 60px;
     
     @media screen and (min-width: $tablet) {
@@ -72,6 +71,8 @@ position: relative;
 }
 
 .nav-site__link--after::after {
+
+
 @media screen and (max-width: 767px){
     display: none;
 }
@@ -163,12 +164,15 @@ content: '';
 
 
 .contacts__icon {
+display: none;
+    @media screen and (min-width: 767px) {
+        display: block;
         margin-right: 10px;
         fill: currentColor;
         transition-property: fill;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 250ms;
-    }
+    }}
 
 .contacts__after:hover .contacts__icon,
 .contacts__after:focus .contacts__icon {
@@ -247,6 +251,7 @@ content: '';
     display: flex;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
     }
 
         @media screen and (min-width: $tablet) {

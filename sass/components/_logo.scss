@@ -3,15 +3,23 @@
   color: $text-black;
   font-family: 'Raleway';
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
     
   &__white{
   color: $text-white;
 }
-
+@media screen and (min-width: $desktop) {
+  font-size: 26px;
+}
 }
 
 .logo__accent {
+  font-size: 24px;
   color: $text-accent;
+  font-family: 'Raleway';
+  font-weight: 700;
+  @media screen and (min-width: $desktop) {
+      font-size: 26px;
+    }
 }

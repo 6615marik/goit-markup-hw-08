@@ -28,7 +28,6 @@ body {
   padding: 0 15px 0 15px;
   margin: 0 auto;
   box-sizing: border-box;
-  background-color: darkcyan;
   width: 100%;
 }
 @media screen and (min-width: 480px) {
@@ -108,10 +107,12 @@ a {
   text-align: center;
   color: #212121;
   margin-bottom: 30px;
+  font-size: 28px;
 }
 @media screen and (min-width: 1200px) {
   .header__two {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -120,15 +121,28 @@ a {
   color: #000000;
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
 }
 .logo__white {
   color: #FFFFFF;
 }
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+  }
+}
 
 .logo__accent {
+  font-size: 24px;
   color: #2196F3;
+  font-family: "Raleway";
+  font-weight: 700;
+}
+@media screen and (min-width: 1200px) {
+  .logo__accent {
+    font-size: 26px;
+  }
 }
 
 .header {
@@ -139,7 +153,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 480px;
   height: 60px;
 }
 @media screen and (min-width: 768px) {
@@ -308,11 +321,17 @@ a {
 }
 
 .contacts__icon {
-  margin-right: 10px;
-  fill: currentColor;
-  transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .contacts__icon {
+    display: block;
+    margin-right: 10px;
+    fill: currentColor;
+    transition-property: fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
 }
 
 .contacts__after:hover .contacts__icon,
@@ -388,6 +407,7 @@ a {
     display: flex;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 768px) {
@@ -461,7 +481,6 @@ a {
   gap: 60px;
   justify-content: flex-start;
   align-items: center;
-  width: 480px;
   height: 490px;
 }
 @media screen and (min-width: 768px) {
@@ -661,12 +680,10 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 480px;
   height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heromo.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 480px 400px;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero__img .hero__img {
@@ -675,28 +692,24 @@ a {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero__img {
-    width: 768px;
     height: 400px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
-    background-size: 768px 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hirotabmo.jpg);
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) and (min-resolution: 192dpi), screen and (min-device-pixel-ratio: 2) and (min-resolution: 2dppx), screen and (min-resolution: 192dpi) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-resolution: 192dpi), screen and (min-resolution: 192dpi) and (min-resolution: 2dppx), screen and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero__img .hero__img {
-    background-image: url("../images/img1.jpg");
+    background-image: url("../images/hirotabmt.jpg");
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-width: 1200px) {
   .hero__img {
     margin-left: auto;
     margin-right: auto;
-    width: 1600px;
     height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
-    background-size: 1600px 600px;
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) and (min-resolution: 192dpi), screen and (min-device-pixel-ratio: 2) and (min-resolution: 2dppx), screen and (min-resolution: 192dpi) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-resolution: 192dpi), screen and (min-resolution: 192dpi) and (min-resolution: 2dppx), screen and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero__img .hero__img {
     background-image: url("../images/img1.jpg");
   }
@@ -721,7 +734,11 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-size: 26px;
-  width: 360px;
+}
+@media screen and (min-width: 480px) {
+  .hero__header {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__header {
@@ -824,7 +841,8 @@ a {
 }
 
 .modal__form {
-  width: 100%;
+  width: 450px;
+  height: 609px;
   margin-bottom: 30px;
 }
 
@@ -835,6 +853,14 @@ a {
   line-height: 23px;
   text-align: center;
   color: #212121;
+  width: 370px;
+  height: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__header-form {
+    width: 448px;
+    height: 23px;
+  }
 }
 
 .form__field {
@@ -917,7 +943,7 @@ a {
 }
 
 .form__field-content {
-  width: 416px;
+  width: 100%;
   height: 96px;
   outline: transparent;
   resize: none;
@@ -971,9 +997,15 @@ input:checked + .form__field-check {
 
 .form__field-text {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 11px;
   line-height: 24px;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .form__field-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .form__field-condition {
@@ -1026,7 +1058,6 @@ input:checked + .form__field-check {
   align-items: center;
   justify-content: center;
   height: 120px;
-  width: 450px;
 }
 @media screen and (min-width: 768px) {
   .iteam__box {
@@ -1040,7 +1071,6 @@ input:checked + .form__field-check {
 }
 
 .benifits__iteam {
-  width: 450px;
   height: 226px;
 }
 @media screen and (min-width: 768px) {
@@ -1103,7 +1133,7 @@ input:checked + .form__field-check {
 }
 
 .clients__link {
-  width: 210px;
+  width: 100%;
   height: 92px;
   display: flex;
   align-items: center;
@@ -1168,14 +1198,6 @@ input:checked + .form__field-check {
 
 .working__iteam:last-child {
   margin-right: 0;
-}
-
-.header__two {
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
 }
 
 .working__application {
@@ -1251,8 +1273,8 @@ input:checked + .form__field-check {
 
 .team__img {
   display: inline-block;
-  width: 450px;
-  height: 460px;
+  width: 100%;
+  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .team__img {
@@ -1334,13 +1356,22 @@ input:checked + .form__field-check {
   margin: 0;
   column-gap: 30px;
   row-gap: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .content__list {
-  width: 370px;
+  width: 100%;
 }
-.content__list:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .content__list {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content__list {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .content__list {
@@ -1355,9 +1386,12 @@ input:checked + .form__field-check {
 
 .content__description {
   position: relative;
-  width: 370px;
+  width: 100%;
   height: 294px;
   overflow: hidden;
+}
+.content__description img {
+  width: 100%;
 }
 
 .content__description-text {
@@ -1408,9 +1442,28 @@ input:checked + .form__field-check {
 }
 
 .filtr {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 326px;
+  height: 91px;
+}
+@media screen and (min-width: 768px) {
+  .filtr {
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    width: 575px;
+    height: 54px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filtr {
+    margin-bottom: 50px;
+  }
 }
 
 .filtr__button {

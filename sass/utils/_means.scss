@@ -25,7 +25,6 @@ body {
 .container {
     padding: 0 15px 0 15px;
     margin: 0 auto;box-sizing: border-box;
-    background-color:darkcyan;
         width: 100%;    
     @media screen and (min-width: $mobile) {
             width: $mobile;
@@ -103,7 +102,10 @@ a {
     text-align: center;
     color: $text-dark;
     margin-bottom: 30px;
-    @media screen and (min-width: $desktop) {
-    margin-bottom: 50px;
-    }
+    font-size: 28px;
+
+        @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        }
 }
